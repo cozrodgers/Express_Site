@@ -4,7 +4,7 @@ html(lang='en')
     link(href='/stylesheets/bootstrap.css', rel='stylesheet')
   body
     // navbar start
-    nav.navbar.navbar-expand-md.navbar-dark.bg-dark.fixed-top
+    nav.navbar.navbar-expand-md.navbar-dark.bg-dark
       a.navbar-brand(href='#') PC Repair
       button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarsExampleDefault', aria-controls='navbarsExampleDefault', aria-expanded='false', aria-label='Toggle navigation')
         span.navbar-toggler-icon
@@ -13,13 +13,18 @@ html(lang='en')
           li.nav-item
             a.nav-link(href='/') Home
           li.nav-item
-            a.nav-link(href='/about') Contact
+            a.nav-link(href='/about') About
           li.nav-item
             a.nav-link(href='/contact') Contact
     // navbar end
+            
+    
     main(role='main')
-        block content
-        hr
+    br
+    .container
+
+     block content
+      hr
       // /container
     footer.container
       p(class ='text-center') © Company 2017-2019

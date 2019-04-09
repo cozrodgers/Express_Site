@@ -25,7 +25,19 @@ app.use(express.static(path.join(__dirname, 'public')))
 //routes
 app.get('/', function(req, res){
     console.log('hello world');
-    res.render('index');
+    res.render('index',{title: 'welcome'});
+   
+});
+
+app.get('/about', function(req, res){
+    console.log('hello world');
+    res.render('about');
+   
+});
+
+app.get('/contact', function(req, res){
+    console.log('hello world');
+    res.render('contact');
    
 });
 

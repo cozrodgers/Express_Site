@@ -1,0 +1,30 @@
+extends layout
+
+block content
+    h2 enter a new quote
+
+    .container
+        form(method='post', action='invoice/create')
+            
+            .form-group
+                label Invoice Name
+                input.form-control(type='text', name='invoiceName', placeholder='Enter Invoice Name')
+            .form-group
+                label Client Name
+                input.form-control(type='text', name='clientName', placeholder='Enter Client Name')
+            .form-group
+                label Job Description
+                textarea.form-control(name='jobDescription', placeholder='Enter Job Details')
+            hr
+
+            .form-group
+                label Materials
+                textarea.form-control(name='materials', placeholder='Enter Material Cost')
+            .form-group
+                label Labour
+                textarea.form-control(name='labour', placeholder='Enter Labout Cost')
+            .form-group
+                label Invoice Date
+                input.form-control(type='date', name='invoiceDate')
+            
+            button.btn.btn-success(type='submit') Submit
